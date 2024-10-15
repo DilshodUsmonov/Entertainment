@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+body {
+     background-color: #10141E;
+}
+
+.entertainment {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+   margin-top:32px;
+   margin-left: 32px;
+   display: flex;
+}
+
+.nav {
+    width: 100%;
+    max-width: 96px;
+    height: 960px;
+    background: #161D2F;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 36px;
+    padding: 30px;
+    padding-top: 0;
+
+}
+
+.nav-logo {
+    width: 32px;
+    height: 26px;
+    margin-top: 35.5px;
+    margin-bottom: 75px;
+}
+
+.nav-logo img {
+    width: 100%;
+}
+
+.nav-list {
+    width: 20px;
+    height: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-list .nav-item:hover {
+    cursor: pointer;
+  
+}
+
+.nav-item:not(:first-child):hover img {
+    filter: invert(0%) sepia(60%) saturate(7493%) hue-rotate(358deg) brightness(100%) contrast(125%);
+}
+
+.boxmark svg  {
+    fill: white;
+    fill: none;
+    stroke: black;
+
+    
+}
+
+
+.oval {
+position: absolute;
+bottom: 32px;
+
+}
+
+.main {
+    width: 100%;
+    max-width: 1276px;
+    height: 100wh;
+}
+
+.search {
+    width: 100%;
+    max-width: 381px;
+    height: 32px;
+    margin-top: 35.5px;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search img {
+    width: 42px;
+    height: 32px;
+    margin-right: 20px;
+
+}
+
+.search input {
+    width: 100%;
+    height: 30px;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30.24px;
+    text-align: left;
+    background: #10141E;
+    border: 0;
+    outline: none;
+    color: white;
+
+
+}
+.main-container {
+    width: 100%;
+    height: 100wh;
+    margin-bottom: 50px;
+}
+.swiper {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    
+}
+.swiper h1 {
+font-family: Outfit;
+font-size: 32px;
+font-weight: 400;
+line-height: 40.32px;
+letter-spacing: -0.5px;
+text-align: left;
+color: white;
+
+}
+
+
+.swiper-wrapper {
+    width: 100%;
+    height: 230px;
+    overflow-x: auto;
+    display: flex;
+    column-gap: 40px;
+}
+
+.swiper-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.swiper-wrapper .swiper-slide {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    padding: 24px;
+    background-color: red;
+}
+
+ .swiper-slide .boxmark {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #676E7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    
+    
+
+}
+
+.swiper-wrapper .swiper-slide .boxmark:hover {
+    background-color: white;
+}
+
+.swiper-slide .boxmark:hover svg path {
+    stroke: black;
+
+}
+
+.swiper-wrapper .swiper-slide .swipper-slide-title {
+    width: 340px;
+    height: 52px;
+    color: white;
+  
+}
+
+.swiper-wrapper .swiper-slide .swipper-slide-title .swiper-list {
+    width: 150px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-wrapper .swiper-slide .swipper-slide-title h4 {
+        font-family: Outfit;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30.24px;
+        text-align: left;
+
+}
+
+
+.cardes {
+    width: 100%;
+    max-width: 1240px;
+    height: 100wh;
+    
+}
+
+.cardes h1 {
+    font-family: Outfit;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40.32px;
+    letter-spacing: -0.5px;
+    text-align: left;
+    margin-bottom: 32px;
+    color: white;
+
+}
+.cardes-card1 {
+    width: 100%;
+    height: 100wh;
+    
+}
+.cardes-card {
+    width: 100%;
+    height: 100wh;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.cardes-card-item {
+    width: 100%;
+    max-width: 280px;
+    height: 228px;
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.cardes-card-item .img {
+    width: 100%;
+    height: 174px;
+    background-color: yellow;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.cardes-card-item .img .boxmark {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #676E7E;
+
+}
+.cardes-card-item .img .boxmark:hover {
+    background-color: white;
+}
+.cardes-card-item .img .boxmark:hover svg path {
+    stroke: black;
+}
+
+
+
+
+
+.cardes .cardes-card .cardes-card-item .cardes-title .cardes-list {
+    width: 137px;
+    height: 16px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: Outfit;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.38px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+   
+
+}
+
+.cardes .cardes-card .cardes-card-item .cardes-title h4 {
+ 
+font-family: Outfit;
+font-size: 18px;
+font-weight: 400;
+line-height: 22.68px;
+text-align: left;
+
+}
+
+.img2 {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
